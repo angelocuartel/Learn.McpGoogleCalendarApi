@@ -1,5 +1,6 @@
 using Learn.McpGoogleCalendar.WebApi.Extensions;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,6 +12,8 @@ builder.Services.AddOpenApi();
 builder.Services.AddMcpConfigurationServer(builder.Configuration);
 
 var app = builder.Build();
+
+//app.MapMcp("/api/test");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

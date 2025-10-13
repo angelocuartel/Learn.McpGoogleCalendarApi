@@ -6,7 +6,7 @@
             (this IServiceCollection services, IConfiguration configuration)
         {
             services.AddMcpServer()
-            .WithStdioServerTransport()
+            .WithHttpTransport()
             .WithToolsFromAssembly();
 
             return services;
